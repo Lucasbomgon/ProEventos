@@ -1,3 +1,10 @@
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.csproj.AssemblyReference.cache
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.AssemblyInfoInputs.cache
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.AssemblyInfo.cs
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.csproj.CoreCompileInputs.cache
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\appsettings.json
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\ProEventos.API.exe
@@ -11,13 +18,6 @@ C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.csproj.AssemblyReference.cache
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.AssemblyInfoInputs.cache
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.AssemblyInfo.cs
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.csproj.CoreCompileInputs.cache
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\ProEventos.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\staticwebassets\ProEventos.API.StaticWebAssets.Manifest.cache
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\staticwebassets\ProEventos.API.StaticWebAssets.xml
 C:\Users\SUP CCONET\Desktop\PROEVENTOS\back\src\ProEventos.API\obj\Debug\net5.0\scopedcss\bundle\ProEventos.API.styles.css
