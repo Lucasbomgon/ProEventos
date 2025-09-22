@@ -11,17 +11,30 @@ namespace ProEventos.API.Controllers
     [Route("api/[controller]")]
     public class EventoController : ControllerBase
     {
-        private readonly ILogger<EventoController> _logger;
 
-        public EventoController(ILogger<EventoController> logger)
+        [HttpGet("{id}")]
+        public string Get(int id)
         {
-            _logger = logger;
+            return $"Exemplo de Get com id = {id}";
         }
 
-        [HttpGet]
-        public string Get()
+        [HttpPost("{id}")]
+
+        public string Post(int id)
         {
-            return "value";
-        }   
+            return $"Exemplo de Post com id = {id}";
+        }
+
+        [HttpPut("{id}")]
+        public string Put(int id)
+        {
+            return $"Exemplo de Put com id = {id}";
+        }
+        
+        [HttpDelete("{id}")]
+        public string HttpDelete(int id)
+        {
+            return $"Exemplo de Delete com id = {id}";
+        }
     }
 }
