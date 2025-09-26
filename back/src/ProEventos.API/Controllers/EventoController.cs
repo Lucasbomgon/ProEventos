@@ -13,18 +13,39 @@ namespace ProEventos.API.Controllers
     public class EventoController : ControllerBase
     {
 
-        [HttpGet("{id}")]
-        public Evento Get(int id)
+
+        public IEnumerable<Evento> _evento = new Evento[]
         {
-            return new Evento()
-            {
-                EventoId = 1,
-                Tema = "Angular 11 e .NET 5",
-                Local = "Belo Horizonte",
-                Lote = "1º Lote",
-                QtdPessoas = 250,
-                DataEvento = DateTime.Now.AddDays(2).ToString()
-            };
+            new Evento() {
+                    EventoId = 1,
+                    Tema = "Angular e .NET Core",
+                    Local = "Belo Horizonte",
+                    Lote = "1º Lote",
+                    QtdPessoas = 250,
+                    DataEvento = DateTime.Now.AddDays(2).ToString(),
+                    ImagemURL = "foto.png"
+                },
+            new Evento() {
+                    EventoId = 2,
+                    Tema = "Angular e Suas novidades",
+                    Local = "Curitiba",
+                    Lote = "2º Lote",
+                    QtdPessoas = 350,
+                    DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
+                    ImagemURL = "foto.png"
+              },
+        };
+
+        public EventoController()
+        {
+        }
+
+
+
+        [HttpGet("{id}")]
+        public IEnumerable<Evento> Get(int id)
+        {
+            return _evento.Where(evento => evento.EventoId == id);
 
         }
 
