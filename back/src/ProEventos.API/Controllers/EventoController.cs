@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ProEventos.API.Models;
 
 namespace ProEventos.API.Controllers
 {
@@ -13,9 +14,18 @@ namespace ProEventos.API.Controllers
     {
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Evento Get(int id)
         {
-            return $"Exemplo de Get com id = {id}";
+            return new Evento()
+            {
+                EventoId = 1,
+                Tema = "Angular 11 e .NET 5",
+                Local = "Belo Horizonte",
+                Lote = "1º Lote",
+                QtdPessoas = 250,
+                DataEvento = DateTime.Now.AddDays(2).ToString()
+            };
+
         }
 
         [HttpPost("{id}")]
