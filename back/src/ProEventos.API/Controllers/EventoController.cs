@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using ProEventos.API.Controllers.Data;
 using ProEventos.API.Models;
@@ -30,9 +31,9 @@ namespace ProEventos.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public IEnumerable<Evento> GetById(int id) // metodo get que recebe um id
+        public Evento GetById(int id) // metodo get que recebe um id
         {
-            return _context.Eventos.Where(evento => evento.EventoId == id); // retorna o evento que tem o id igual ao id passado
+            return _context.Eventos.FirstOrDefault(evento => evento.EventoId == id); // retorna o evento que tem o id igual ao id passado
 
         }
 
