@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ProEventos.API.Controllers.Data;
 using ProEventos.API.Models;
 
 namespace ProEventos.API.Controllers
@@ -14,38 +15,24 @@ namespace ProEventos.API.Controllers
     {
 
 
-        public IEnumerable<Evento> _evento = new Evento[] // foi criado um evento erdado de evento
-        {
-            new Evento() {
-                    EventoId = 1,
-                    Tema = "Angular e .NET Core",
-                    Local = "Belo Horizonte",
-                    Lote = "1º Lote",
-                    QtdPessoas = 250,
-                    DataEvento = DateTime.Now.AddDays(2).ToString(),
-                    ImagemURL = "foto.png"
-                },
-            new Evento() { 
-                    EventoId = 2,
-                    Tema = "Angular e Suas novidades",
-                    Local = "Curitiba",
-                    Lote = "2º Lote",
-                    QtdPessoas = 350,
-                    DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
-                    ImagemURL = "foto.png"
-              },
-        };
+        
 
-        public EventoController()
+        public readonly DataContext _context;
+        public EventoController(DataContext context)
         {
+            _context = context; // injeção de dependencia
         }
 
-
+        [HttpGet]
+        public IEnumerable<Evento> Get() // metodo get que retorna uma lista de eventos
+        {
+            return _context.Eventos; // retorna a lista de eventos do banco de dados
+        }
 
         [HttpGet("{id}")]
-        public IEnumerable<Evento> Get(int id) // metodo get que recebe um id
+        public IEnumerable<Evento> GetById(int id) // metodo get que recebe um id
         {
-            return _evento.Where(evento => evento.EventoId == id); // retorna o evento que tem o id igual ao id passado
+            return _context.Eventos.Where(evento => evento.EventoId == id); // retorna o evento que tem o id igual ao id passado
 
         }
 
